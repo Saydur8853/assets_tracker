@@ -1,0 +1,35 @@
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=23.3.0",
+    "ipython>=8.12.0",
+]
+
+[project]
+name = "AssetTrackr"
+version = "0.1.0"
+description = "a Django app to track corporate assets such as phones, tablets, laptops and other gears handed out to employees."
+authors = [
+    {name = "saydur", email = "saydurrahman440@gmail.com"},
+]
+dependencies = [
+    "Django>=4.2",
+    "djangorestframework>=3.14.0",
+    "django-cors-headers>=3.14.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-pep517>=1.0"]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.scripts]
+start = "python manage.py runserver"
+makemigrations = "python manage.py makemigrations"
+migrate = "python manage.py migrate"
+createsuperuser = "python manage.py createsuperuser"
+startproject = "django-admin startproject {args} ."
+startapp = "python manage.py startapp {args}"
+shell = "python manage.py shell"
