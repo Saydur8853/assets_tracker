@@ -1,0 +1,11 @@
+**/__pycache__
+page_data.pickle
+**/*~
+static
+static/*
+media
+media/*
+.vscode/*
+__pypackages__
+__pypackages__/*
+*.envs
